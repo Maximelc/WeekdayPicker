@@ -2,7 +2,7 @@
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/WeekdayPicker.svg)](https://img.shields.io/cocoapods/v/WeekdayPicker.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Platform](https://img.shields.io/cocoapods/p/WeekdayPicker.svg?style=flat)](https://WeekdayPicker.github.io/WeekdayPicker)
+[![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg?style=flat)](https://maximelc.github.io/WeekdayPicker)
 
 WeekdayPicker is a custom UIDatePicker with weekdays.
 
@@ -22,7 +22,6 @@ WeekdayPicker is a custom UIDatePicker with weekdays.
 
 ## Communication
 
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/WeekdayPicker). (Tag 'WeekdayPicker')
 - If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/WeekdayPicker).
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
@@ -91,11 +90,11 @@ dependencies: [
 
 ### Manually
 
-If you prefer not to use any of the aforementioned dependency managers, you can integrate WeekdayPicker into your project manually.
+If you prefer to not use any of the dependency managers, you can integrate WeekdayPicker into your project manually.
 
 ### Usage
 
-After adding the framework to your project, and import the module.
+After adding the framework to your project, import the module.
 ```swift
 import WeekdayPicker
 ```
@@ -106,12 +105,12 @@ Add WeekdayPicker programmatically 🤓
 let myPicker: WeekdayPicker = WeekdayPicker()
 
 // Add delegation conformance
-myPicker?.delegated = self
+myPicker.delegated = self
 
 // Apply frame
 myPicker.frame = CGRect(origin: CGPoint(x: 0, y: 150),
-                          size: CGSize(width: self.view.frame.size.width,
-                                         height: 150))        
+                        size: CGSize(width: self.view.frame.size.width,
+                                     height: 150))        
 
 // The first date to show will be the current date
 myPicker.setToDate(Date())
