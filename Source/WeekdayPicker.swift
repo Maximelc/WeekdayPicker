@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// WeekdayPicker is a custom UIDatePicker with weekdays.
 public final class WeekdayPicker: UIPickerView {
     
     // MARK: - Public

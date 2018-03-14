@@ -30,14 +30,6 @@ extension WeekdayPicker {
 // MARK: - Notifications Actions
 extension WeekdayPicker {
     
-    /*
-     // Save weekday TMP
-     let currentWeekday = self.weekdays[self.selectedRow(inComponent: .weekday)]
-     self.weekdayHistoryList.append(currentWeekday)
-     
-     PUT THIS SOMEWHERE AND PLAY WITH IT
-    */
-    
     @objc
     private func weekdayUpdate() {
         print("Update day")

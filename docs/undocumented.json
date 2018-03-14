@@ -1,33 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
-      "line": null,
-      "symbol": "WeekdayPicker",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
-      "line": null,
-      "symbol": "WeekdayPicker",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
-      "line": null,
-      "symbol": "WeekdayPicker",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
-      "line": 11,
-      "symbol": "WeekdayPicker",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker"
 }

@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
           WeekdayPicker Docs
         </a>
-         (80% documented)
+         (100% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -85,7 +85,7 @@
 
 <p><a href="https://img.shields.io/cocoapods/v/WeekdayPicker.svg"><img src="https://img.shields.io/cocoapods/v/WeekdayPicker.svg" alt="CocoaPods Compatible"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a>
-<a href="https://WeekdayPicker.github.io/WeekdayPicker"><img src="https://img.shields.io/cocoapods/p/WeekdayPicker.svg?style=flat" alt="Platform"></a></p>
+<a href="https://maximelc.github.io/WeekdayPicker"><img src="https://img.shields.io/badge/platform-iOS-lightgrey.svg?style=flat" alt="Platform"></a></p>
 
 <p>WeekdayPicker is a custom UIDatePicker with weekdays.</p>
 
@@ -108,7 +108,6 @@
 <h2 id='communication' class='heading'>Communication</h2>
 
 <ul>
-<li>If you <strong>need help</strong>, use <a href="http://stackoverflow.com/questions/tagged/WeekdayPicker">Stack Overflow</a>. (Tag &lsquo;WeekdayPicker&rsquo;)</li>
 <li>If you&rsquo;d like to <strong>ask a general question</strong>, use <a href="http://stackoverflow.com/questions/tagged/WeekdayPicker">Stack Overflow</a>.</li>
 <li>If you <strong>found a bug</strong>, open an issue.</li>
 <li>If you <strong>have a feature request</strong>, open an issue.</li>
@@ -176,10 +175,10 @@ dependencies: [
 </details>
 <h3 id='manually' class='heading'>Manually</h3>
 
-<p>If you prefer not to use any of the aforementioned dependency managers, you can integrate WeekdayPicker into your project manually.</p>
+<p>If you prefer to not use any of the dependency managers, you can integrate WeekdayPicker into your project manually.</p>
 <h3 id='usage' class='heading'>Usage</h3>
 
-<p>After adding the framework to your project, and import the module.</p>
+<p>After adding the framework to your project, import the module.</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">WeekdayPicker</span>
 </code></pre>
 
@@ -188,12 +187,12 @@ dependencies: [
 <span class="k">let</span> <span class="nv">myPicker</span><span class="p">:</span> <span class="kt">WeekdayPicker</span> <span class="o">=</span> <span class="kt">WeekdayPicker</span><span class="p">()</span>
 
 <span class="c1">// Add delegation conformance</span>
-<span class="n">myPicker</span><span class="p">?</span><span class="o">.</span><span class="n">delegated</span> <span class="o">=</span> <span class="k">self</span>
+<span class="n">myPicker</span><span class="o">.</span><span class="n">delegated</span> <span class="o">=</span> <span class="k">self</span>
 
 <span class="c1">// Apply frame</span>
 <span class="n">myPicker</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">origin</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">150</span><span class="p">),</span>
-                          <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">size</span><span class="o">.</span><span class="n">width</span><span class="p">,</span>
-                                         <span class="nv">height</span><span class="p">:</span> <span class="mi">150</span><span class="p">))</span>        
+                        <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">size</span><span class="o">.</span><span class="n">width</span><span class="p">,</span>
+                                     <span class="nv">height</span><span class="p">:</span> <span class="mi">150</span><span class="p">))</span>        
 
 <span class="c1">// The first date to show will be the current date</span>
 <span class="n">myPicker</span><span class="o">.</span><span class="nf">setToDate</span><span class="p">(</span><span class="kt">Date</span><span class="p">())</span>
