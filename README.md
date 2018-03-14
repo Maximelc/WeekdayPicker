@@ -22,7 +22,6 @@ WeekdayPicker is a custom UIDatePicker with weekdays.
 
 ## Communication
 
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/WeekdayPicker). (Tag 'WeekdayPicker')
 - If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/WeekdayPicker).
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
@@ -91,11 +90,11 @@ dependencies: [
 
 ### Manually
 
-If you prefer not to use any of the aforementioned dependency managers, you can integrate WeekdayPicker into your project manually.
+If you prefer to not use any of the dependency managers, you can integrate WeekdayPicker into your project manually.
 
 ### Usage
 
-After adding the framework to your project, and import the module.
+After adding the framework to your project, import the module.
 ```swift
 import WeekdayPicker
 ```
