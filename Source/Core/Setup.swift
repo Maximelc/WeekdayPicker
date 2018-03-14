@@ -11,6 +11,7 @@ import UIKit
 // MARK: - Setup functions
 extension WeekdayPicker {
     
+    /// Setup function
     internal func setup() {
         setupProtocols()
         setupNotifications()
@@ -18,6 +19,7 @@ extension WeekdayPicker {
         self.perform(#selector(saveFirstWeekday), with: nil, afterDelay: 1.0)
     }
     
+    /// Setup protocols for WeekdayPicker
     private func setupProtocols() {
         self.delegate = self
         self.dataSource = self

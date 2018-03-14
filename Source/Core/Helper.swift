@@ -11,6 +11,7 @@ import UIKit
 // MARK: - Helper
 extension WeekdayPicker {
     
+    /// Return indexes based on a date.
     internal func getDayIndexes(currentDate: Date) -> (weekday: Int, day: Int, month: Int, year: Int) {
         let dateComponents = self.calendar.dateComponents([.year, .month, .weekday, .day], from: currentDate)
         
@@ -26,7 +27,7 @@ extension WeekdayPicker {
         return (0, 0, 0, 0)
     }
     
-    /// Create date from all selected indexes
+    /// Create date from all selected indexes.
     internal func createDateFromSelected() -> Date {
         let dayStr: String = days[self.selectedRow(inComponent: .day)]
         let monthStr: String = months[self.selectedRow(inComponent: .month)]
@@ -39,7 +40,7 @@ extension WeekdayPicker {
         return date
     }
     
-    /// Select custom date
+    /// Select custom date.
     internal func setCustomDate(date aDate: Date) {
         let allIndexes = getDayIndexes(currentDate: aDate)
         if let allWeekdays = self.dateFormatter.shortWeekdaySymbols {
@@ -53,7 +54,7 @@ extension WeekdayPicker {
         updateDays()
     }
     
-    /// Get number of day for month and year
+    /// Get number of day for month and year.
     internal func numberOfDay(month: Int, year: Int) -> Int {
         let dateComponents: DateComponents = DateComponents(year: year, month: month)
         if let date: Date = self.calendar.date(from: dateComponents),
@@ -63,6 +64,7 @@ extension WeekdayPicker {
         return 0
     }
     
+    /// Find index in list using an element.
     internal func findIndex(elem: String, list: [String]) -> Int {
         if let offset = list.index(where: { $0 == elem }) {
             return offset

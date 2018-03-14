@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
           WeekdayPicker Docs
         </a>
-         (38% documented)
+         (80% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -81,7 +81,7 @@
         <section class="section">
           <div class="section-content">
             
-            <p>WeekdayPicker</p>
+            <h1 id='weekdaypicker' class='heading'>WeekdayPicker</h1>
 
 <p><a href="https://img.shields.io/cocoapods/v/WeekdayPicker.svg"><img src="https://img.shields.io/cocoapods/v/WeekdayPicker.svg" alt="CocoaPods Compatible"></a>
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a>
@@ -89,10 +89,13 @@
 
 <p>WeekdayPicker is a custom UIDatePicker with weekdays.</p>
 
+<p><img src="https://github.com/Maximelc/WeekdayPicker/blob/master/Assets/DemoExample.png" alt="Demo example" width="270" height="464"></p>
+
 <ul>
 <li><a href="#requirements">Requirements</a></li>
 <li><a href="#communication">Communication</a></li>
 <li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
 <li><a href="#license">License</a></li>
 </ul>
 <h2 id='requirements' class='heading'>Requirements</h2>
@@ -174,7 +177,43 @@ dependencies: [
 <h3 id='manually' class='heading'>Manually</h3>
 
 <p>If you prefer not to use any of the aforementioned dependency managers, you can integrate WeekdayPicker into your project manually.</p>
-<h2 id='license' class='heading'>License</h2>
+<h3 id='usage' class='heading'>Usage</h3>
+
+<p>After adding the framework to your project, and import the module.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">WeekdayPicker</span>
+</code></pre>
+
+<p>Add WeekdayPicker programmatically 🤓</p>
+<pre class="highlight swift"><code><span class="c1">// Initialization</span>
+<span class="k">let</span> <span class="nv">myPicker</span><span class="p">:</span> <span class="kt">WeekdayPicker</span> <span class="o">=</span> <span class="kt">WeekdayPicker</span><span class="p">()</span>
+
+<span class="c1">// Add delegation conformance</span>
+<span class="n">myPicker</span><span class="p">?</span><span class="o">.</span><span class="n">delegated</span> <span class="o">=</span> <span class="k">self</span>
+
+<span class="c1">// Apply frame</span>
+<span class="n">myPicker</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">origin</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">150</span><span class="p">),</span>
+                          <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">size</span><span class="o">.</span><span class="n">width</span><span class="p">,</span>
+                                         <span class="nv">height</span><span class="p">:</span> <span class="mi">150</span><span class="p">))</span>        
+
+<span class="c1">// The first date to show will be the current date</span>
+<span class="n">myPicker</span><span class="o">.</span><span class="nf">setToDate</span><span class="p">(</span><span class="kt">Date</span><span class="p">())</span>
+
+<span class="c1">// Add picker to current view</span>
+<span class="k">self</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">myPicker</span><span class="p">)</span>
+</code></pre>
+
+<p>Implement WeekdayPickerDelegate 🤝</p>
+<pre class="highlight swift"><code><span class="c1">// MARK: - WeekdayPickerDelegate</span>
+<span class="kd">extension</span> <span class="o">&lt;</span><span class="err">#</span><span class="kt">MyViewController</span><span class="err">#</span><span class="o">&gt;</span><span class="p">:</span> <span class="kt">WeekdayPickerDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">weekdayPickerDateChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="k">let</span> <span class="nv">changedDate</span> <span class="o">=</span> <span class="n">date</span> <span class="p">{</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">changedDate</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='license' class='heading'>License</h3>
 
 <p>WeekdayPicker is released under the MIT license. <a href="https://github.com/Maximelc/WeekdayPicker/blob/master/LICENSE">See LICENSE</a> for details.</p>
 

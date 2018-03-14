@@ -11,6 +11,7 @@ import UIKit
 // MARK: - Data generation
 extension WeekdayPicker {
     
+    /// Generate list of days numbers.
     internal func dayList() -> [String] {
         return (1...31).map { $0.toString() }
     }

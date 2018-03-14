@@ -13,4 +13,3 @@ FOUNDATION_EXPORT double WeekdayPickerVersionNumber;
 
 //! Project version string for WeekdayPicker.
 FOUNDATION_EXPORT const unsigned char WeekdayPickerVersionString[];
-

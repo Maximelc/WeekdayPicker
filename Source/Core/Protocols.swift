@@ -9,8 +9,10 @@
 import UIKit
 
 // MARK: - UIPickerViewDelegate
+/// Implementation of UIPickerViewDelegate
 extension WeekdayPicker: UIPickerViewDelegate {
     
+    /// Called by the picker view when the user selects a row in a component.
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if let componentIndex = ComponentIndex(rawValue: component) {
             fireNotification(selectedComponent: componentIndex)
@@ -28,6 +30,7 @@ extension WeekdayPicker: UIPickerViewDelegate {
         self.delegated?.weekdayPickerDateChanged(self.currentDate)
     }
     
+    /// Called by the picker view when it needs the title to use for a given row in a given component.
     public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if let componentIndex = ComponentIndex(rawValue: component) {
             switch componentIndex {
@@ -42,12 +45,15 @@ extension WeekdayPicker: UIPickerViewDelegate {
 }
 
 // MARK: - UIPickerViewDataSource
+/// Implementation of UIPickerViewDataSource
 extension WeekdayPicker: UIPickerViewDataSource {
     
+    /// Called by the picker view when it needs the number of components.
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 4
     }
     
+    /// Called by the picker view when it needs the number of rows for a specified component.
     public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if let componentIndex = ComponentIndex(rawValue: component) {
             switch componentIndex {

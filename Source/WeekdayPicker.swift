@@ -11,6 +11,7 @@ import UIKit
 public final class WeekdayPicker: UIPickerView {
     
     // MARK: - Public
+    /// Delegate method
     public weak var delegated: WeekdayPickerDelegate?
     
     /// Current selected date
@@ -61,16 +62,19 @@ public final class WeekdayPicker: UIPickerView {
     internal var weekdayHistoryList: [String] = [String]() //tmp
     
     // MARK: - Life cycle
+    /// Init function take frame
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
         setup()
     }
     
+    /// Init function coder
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// De-init function
     deinit {
         removeNotifications()
     }

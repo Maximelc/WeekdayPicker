@@ -130,7 +130,6 @@ extension HomeViewController {
             customPicker.setToDate(Date())
         }
     }
-    
 }
 
 // MARK: - WeekdayPickerDelegate
