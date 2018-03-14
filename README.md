@@ -106,12 +106,12 @@ Add WeekdayPicker programmatically 🤓
 let myPicker: WeekdayPicker = WeekdayPicker()
 
 // Add delegation conformance
-myPicker?.delegated = self
+myPicker.delegated = self
 
 // Apply frame
 myPicker.frame = CGRect(origin: CGPoint(x: 0, y: 150),
-                          size: CGSize(width: self.view.frame.size.width,
-                                         height: 150))        
+                        size: CGSize(width: self.view.frame.size.width,
+                                     height: 150))        
 
 // The first date to show will be the current date
 myPicker.setToDate(Date())
