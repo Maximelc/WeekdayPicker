@@ -6,7 +6,7 @@
 
 WeekdayPicker is a custom UIDatePicker with weekdays.
 
-<img src="https://github.com/Maximelc/WeekdayPicker/blob/master/Assets/DemoExample.png" alt="Demo example" width="270" height="464">
+<img src="https://raw.githubusercontent.com/Maximelc/WeekdayPicker/master/Assets/DemoExample.png" alt="Demo example" width="270" height="464">
 
 - [Requirements](#requirements)
 - [Communication](#communication)
