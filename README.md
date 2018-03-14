@@ -12,6 +12,7 @@ WeekdayPicker is a custom UIDatePicker with weekdays.
 - [Communication](#communication)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Documentation](#documentation)
 - [License](#license)
 
 ## Requirements
@@ -131,6 +132,9 @@ extension <#MyViewController#>: WeekdayPickerDelegate {
     }
 }
 ```
+
+### Documentation
+The full documentation is available [here](https://maximelc.github.io/WeekdayPicker).
 
 ### License
 
