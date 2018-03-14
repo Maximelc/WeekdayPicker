@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WeekdayPicker  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="WeekdayPicker  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          WeekdayPicker Docs
+        </a>
+         (38% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://maximelc.github.io/WeekdayPicker/">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fmaximelc%2Egithub%2Eio%2FWeekdayPicker%2Fdocsets%2FWeekdayPicker%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">WeekdayPicker Reference</a>
+      <img class="carat" src="img/carat.png" />
+      WeekdayPicker  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WeekdayPicker.html">WeekdayPicker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WeekdayPicker/ComponentIndex.html">– ComponentIndex</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/WeekdayPickerDelegate.html">WeekdayPickerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <p>WeekdayPicker</p>
+
+<p><a href="https://img.shields.io/cocoapods/v/WeekdayPicker.svg"><img src="https://img.shields.io/cocoapods/v/WeekdayPicker.svg" alt="CocoaPods Compatible"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a>
+<a href="https://WeekdayPicker.github.io/WeekdayPicker"><img src="https://img.shields.io/cocoapods/p/WeekdayPicker.svg?style=flat" alt="Platform"></a></p>
+
+<p>WeekdayPicker is a custom UIDatePicker with weekdays.</p>
+
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#communication">Communication</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 9.0+</li>
+<li>Xcode 9+</li>
+<li>Swift 4.0+</li>
+</ul>
+<h2 id='communication' class='heading'>Communication</h2>
+
+<ul>
+<li>If you <strong>need help</strong>, use <a href="http://stackoverflow.com/questions/tagged/WeekdayPicker">Stack Overflow</a>. (Tag &lsquo;WeekdayPicker&rsquo;)</li>
+<li>If you&rsquo;d like to <strong>ask a general question</strong>, use <a href="http://stackoverflow.com/questions/tagged/WeekdayPicker">Stack Overflow</a>.</li>
+<li>If you <strong>found a bug</strong>, open an issue.</li>
+<li>If you <strong>have a feature request</strong>, open an issue.</li>
+<li>If you <strong>want to contribute</strong>, submit a pull request.</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>You can choose one of theses options to install WeekdayPicker.</p>
+
+<details>
+<summary>📦 CocoaPods — CocoaPods is a library dependencies for Xcode projects.</summary>
+[CocoaPods Installation](https://guides.cocoapods.org/using/getting-started.html#getting-started)
+
+To integrate WeekdayPicker into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+&ldquo;`ruby
+source &lsquo;https://github.com/CocoaPods/Specs.git&rsquo;
+platform :ios, &lsquo;9.0&rsquo;
+use_frameworks!
+
+target &lsquo;<Your Target Name>&rsquo; do
+    pod &lsquo;WeekdayPicker&rsquo;, &lsquo;~> 1.0&rsquo;
+end
+&rdquo;`
+
+Then, run the following command:
+
+&ldquo;`bash
+$ pod install
+&rdquo;`
+</details>
+
+<details>
+<summary>💉 Carthage — Carthage is a decentralized dependency manager for Cocoa.</summary>
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+&ldquo;`bash
+$ brew update
+$ brew install carthage
+&rdquo;`
+
+To integrate WeekdayPicker into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+&ldquo;`ogdl
+github &quot;WeekdayPicker/WeekdayPicker&rdquo; ~> 4.7
+&ldquo;`
+
+Run `carthage update` to build the framework and drag the built `WeekdayPicker.framework` into your Xcode project.
+</details>
+
+<details>
+<summary>📚 Swift Package Manager — Package manager for the Swift.</summary>
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but WeekdayPicker does support its use on supported platforms.
+
+Once you have your Swift package set up, adding WeekdayPicker as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+&rdquo;`swift
+dependencies: [
+    .package(url: &ldquo;https://github.com/Maximelc/WeekdayPicker.git&rdquo;, from: &ldquo;1.0.0&rdquo;)
+]
+&ldquo;`
+</details>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use any of the aforementioned dependency managers, you can integrate WeekdayPicker into your project manually.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>WeekdayPicker is released under the MIT license. <a href="https://github.com/Maximelc/WeekdayPicker/blob/master/LICENSE">See LICENSE</a> for details.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://maximelc.github.io/" target="_blank" rel="external">Maximelc</a>. All rights reserved. (Last updated: 2018-03-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

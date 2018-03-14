@@ -1,0 +1,96 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/Core/Protocols.swift",
+      "line": 14,
+      "symbol": "WeekdayPicker.pickerView(_:didSelectRow:inComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/Core/Protocols.swift",
+      "line": 31,
+      "symbol": "WeekdayPicker.pickerView(_:titleForRow:forComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/Core/Protocols.swift",
+      "line": 47,
+      "symbol": "WeekdayPicker.numberOfComponents(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/Core/Protocols.swift",
+      "line": 51,
+      "symbol": "WeekdayPicker.pickerView(_:numberOfRowsInComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/Features/Delegate.swift",
+      "line": 11,
+      "symbol": "WeekdayPickerDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/Features/Delegate.swift",
+      "line": 13,
+      "symbol": "WeekdayPickerDelegate.weekdayPickerDateChanged(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
+      "line": null,
+      "symbol": "WeekdayPicker",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
+      "line": null,
+      "symbol": "WeekdayPicker",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
+      "line": null,
+      "symbol": "WeekdayPicker",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
+      "line": 11,
+      "symbol": "WeekdayPicker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
+      "line": 14,
+      "symbol": "WeekdayPicker.delegated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
+      "line": 64,
+      "symbol": "WeekdayPicker.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker/Source/WeekdayPicker.swift",
+      "line": 70,
+      "symbol": "WeekdayPicker.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Maximelc/Documents/Xcode Projects/Frameworks/WeekdayPicker"
+}

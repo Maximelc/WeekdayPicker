@@ -1,0 +1,8 @@
+author: Maximelc
+author_url: https://maximelc.github.io/
+github_url: https://maximelc.github.io/WeekdayPicker/
+root_url: https://maximelc.github.io/WeekdayPicker/
+module: WeekdayPicker
+output: docs
+theme: fullwidth
+# xcodebuild_arguments: [-workspace, 'WeekdayPicker.xcworkspace', -scheme, 'WeekdayPicker']
