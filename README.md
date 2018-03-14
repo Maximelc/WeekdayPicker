@@ -11,6 +11,7 @@ WeekdayPicker is a custom UIDatePicker with weekdays.
 - [Requirements](#requirements)
 - [Communication](#communication)
 - [Installation](#installation)
+- [Usage](#usage)
 - [License](#license)
 
 ## Requirements
@@ -92,6 +93,46 @@ dependencies: [
 
 If you prefer not to use any of the aforementioned dependency managers, you can integrate WeekdayPicker into your project manually.
 
-## License
+### Usage
+
+After adding the framework to your project, and import the module.
+```swift
+import WeekdayPicker
+```
+
+Add WeekdayPicker programmatically 🤓
+```swift
+// Initialization
+let myPicker: WeekdayPicker = WeekdayPicker()
+
+// Add delegation conformance
+myPicker?.delegated = self
+
+// Apply frame
+myPicker.frame = CGRect(origin: CGPoint(x: 0, y: 150),
+                          size: CGSize(width: self.view.frame.size.width,
+                                         height: 150))        
+
+// The first date to show will be the current date
+myPicker.setToDate(Date())
+
+// Add picker to current view
+self.view.addSubview(myPicker)
+```
+
+Implement WeekdayPickerDelegate 🤝
+```swift
+// MARK: - WeekdayPickerDelegate
+extension <#MyViewController#>: WeekdayPickerDelegate {
+
+    func weekdayPickerDateChanged(_ date: Date?) {
+        if let changedDate = date {
+            print("\(changedDate)")
+        }
+    }
+}
+```
+
+### License
 
 WeekdayPicker is released under the MIT license. [See LICENSE](https://github.com/Maximelc/WeekdayPicker/blob/master/LICENSE) for details.
