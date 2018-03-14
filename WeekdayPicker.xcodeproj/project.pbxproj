@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6A1EA2205982BB006F6FAD /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A1EA1205982BB006F6FAD /* Int+Random.swift */; };
 		4EBD110C2058B60100A9D53D /* WeekdayPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBD11022058B60100A9D53D /* WeekdayPicker.framework */; };
 		4EBD11112058B60100A9D53D /* WeekdayPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD11102058B60100A9D53D /* WeekdayPickerTests.swift */; };
 		4EBD11132058B60100A9D53D /* WeekdayPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBD11052058B60100A9D53D /* WeekdayPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E6A1EA1205982BB006F6FAD /* Int+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		4EBD11022058B60100A9D53D /* WeekdayPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeekdayPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBD11052058B60100A9D53D /* WeekdayPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekdayPicker.h; sourceTree = "<group>"; };
 		4EBD11062058B60100A9D53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6A1EA02059817F006F6FAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EBD11522058BD9600A9D53D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4EBD10F82058B60100A9D53D = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				4EBD11502058BD9600A9D53D /* DemoTests.swift */,
-				4EBD11522058BD9600A9D53D /* Info.plist */,
+				4E6A1EA02059817F006F6FAD /* Supporting Files */,
 			);
 			path = DemoTests;
 			sourceTree = "<group>";
@@ -268,6 +278,7 @@
 			children = (
 				4EBD11632058C57500A9D53D /* Date+Random.swift */,
 				4EBD11652058C68E00A9D53D /* UIButton+Layout.swift */,
+				4E6A1EA1205982BB006F6FAD /* Int+Random.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -475,6 +486,7 @@
 			files = (
 				4EBD11642058C57500A9D53D /* Date+Random.swift in Sources */,
 				4EBD113C2058BD9600A9D53D /* AppDelegate.swift in Sources */,
+				4E6A1EA2205982BB006F6FAD /* Int+Random.swift in Sources */,
 				4EBD115F2058BF4500A9D53D /* HomeViewController.swift in Sources */,
 				4EBD11662058C68E00A9D53D /* UIButton+Layout.swift in Sources */,
 			);
@@ -681,7 +693,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeekdayPickerTests/Info.plist;
+				INFOPLIST_FILE = "WeekdayPickerTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.maximelc.WeekdayPickerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -695,7 +707,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = WeekdayPickerTests/Info.plist;
+				INFOPLIST_FILE = "WeekdayPickerTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.maximelc.WeekdayPickerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -744,7 +756,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DemoTests/Info.plist;
+				INFOPLIST_FILE = "DemoTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.maximelc.DemoTests;
@@ -761,7 +773,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DemoTests/Info.plist;
+				INFOPLIST_FILE = "DemoTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.maximelc.DemoTests;

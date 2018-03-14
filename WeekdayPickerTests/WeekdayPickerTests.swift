@@ -9,28 +9,51 @@
 import XCTest
 @testable import WeekdayPicker
 
+@available(iOS 9.0, *)
 class WeekdayPickerTests: XCTestCase {
     
+    // MARK: - Privates
+    private let app = XCUIApplication()
+    
+    // MARK: - Life cycle
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        continueAfterFailure = false
+        app.launch()
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+}
+
+// MARK: - WeekdayPickerTests
+@available(iOS 9.0, *)
+extension WeekdayPickerTests {
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    /// Change weekday
+    private func changeWeekday() {
+        app.pickerWheels.element(boundBy: 0).adjust(toPickerWheelValue: "Thu")
+        XCTAssert(app.staticTexts["Thu"].exists)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    /// Change day
+    private func changeDay() {
+        app.pickerWheels.element(boundBy: 1).adjust(toPickerWheelValue: "13")
+        XCTAssert(app.staticTexts["13"].exists)
     }
     
+    /// Change month
+    private func changeMonth() {
+        app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "Mar")
+        XCTAssert(app.staticTexts["Mar"].exists)
+    }
+    
+    /// Change year
+    private func changeYear() {
+        app.pickerWheels.element(boundBy: 3).adjust(toPickerWheelValue: "2019")
+        XCTAssert(app.staticTexts["2019"].exists)
+    }
 }
