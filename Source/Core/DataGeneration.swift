@@ -17,7 +17,7 @@ extension WeekdayPicker {
     }
     
     /// Get list of days starting by monday
-    internal func weekdayList() -> [String]! {
+    internal func weekdayList() -> [String] {
         let numDays: Int = self.calendar.weekdaySymbols.count
         let first: Int = self.calendar.firstWeekday - 1
         let end: Int = first + numDays - 1
@@ -25,7 +25,7 @@ extension WeekdayPicker {
     }
     
     /// Genrate day number for given month and year
-    internal func dayList(month: Int, year: Int) -> [String]! {
+    internal func dayList(month: Int, year: Int) -> [String] {
         if let currentYear: Int = Int(self.years.first ?? 0.toString()) {
             let nbDays: Int = self.numberOfDay(month: month + 1, year: year + currentYear)
             var tmpList: [String] = [String]()
@@ -34,16 +34,16 @@ extension WeekdayPicker {
             }
             return tmpList
         }
-        return nil
+        return [String]()
     }
     
     /// Get list of months
-    internal func monthList() -> [String]! {
+    internal func monthList() -> [String] {
         return self.dateFormatter.shortMonthSymbols
     }
     
     /// Get year list
-    internal func yearList() -> [String]! {
+    internal func yearList() -> [String] {
         if let currentYear = self.calendar.dateComponents([.year], from: Date()).year {
             var tmpList: [String] = [String]()
             for current in currentYear...(currentYear + 10) {
@@ -51,6 +51,6 @@ extension WeekdayPicker {
             }
             return tmpList
         }
-        return nil
+        return [String]()
     }
 }

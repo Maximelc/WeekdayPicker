@@ -12,8 +12,8 @@ import WeekdayPicker
 final class HomeViewController: UIViewController {
     
     // MARK: - Privates
-    private var dateLabel: UILabel? = nil
-    private var weekdayPicker: WeekdayPicker? = nil
+    private var dateLabel: UILabel?
+    private var weekdayPicker: WeekdayPicker?
     
     // MARK: - Application Lifecyle
     override func viewWillAppear(_ animated: Bool) {

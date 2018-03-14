@@ -22,7 +22,7 @@ extension Date {
         return Date.random(between: today, and: earliest)
     }
     
-    static func random(between initial: Date, and final:Date) -> Date {
+    static func random(between initial: Date, and final: Date) -> Date {
         let interval = final.timeIntervalSince(initial)
         let randomInterval = TimeInterval(arc4random_uniform(UInt32(interval)))
         return initial.addingTimeInterval(randomInterval)
