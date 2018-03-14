@@ -44,7 +44,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'WeekdayPicker', '~> 1.0'
+    pod 'WeekdayPicker', '~> 0.1'
 end
 ```
 
