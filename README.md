@@ -1,10 +1,12 @@
-WeekdayPicker
+# WeekdayPicker
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/WeekdayPicker.svg)](https://img.shields.io/cocoapods/v/WeekdayPicker.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/WeekdayPicker.svg?style=flat)](https://WeekdayPicker.github.io/WeekdayPicker)
 
 WeekdayPicker is a custom UIDatePicker with weekdays.
+
+[logo]: https://github.com/Maximelc/WeekdayPicker/blob/master/Assets/DemoExample.png "Demo example"
 
 - [Requirements](#requirements)
 - [Communication](#communication)
